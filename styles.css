@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6; /* This will increase the line height globally */
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Specific styles for homepage */
+.home-page main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Content and image styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left, .right {
+    width: 48%;
+}
+
+.left p, .right p {
+    margin-bottom: 10px;
+    line-height: 1.8; /* Add a little extra space between paragraphs */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content:last-of-type .right img {
+    margin-bottom: 50px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-page main {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
